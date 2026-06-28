@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": false,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@halo/types": ["./packages/types/src/index.ts"],
+      "@halo/types/*": ["./packages/types/src/*"],
+      "@halo/utils": ["./packages/utils/src/index.ts"],
+      "@halo/utils/*": ["./packages/utils/src/*"],
+      "@halo/ui": ["./packages/ui/src/index.ts"],
+      "@halo/ui/*": ["./packages/ui/src/*"]
+    }
+  }
+}

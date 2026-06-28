@@ -1,0 +1,21 @@
+{
+  "name": "halo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Halo — AI-powered dealership operating system",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@halo/web",
+    "build": "npm run build --workspace=@halo/web",
+    "start": "npm run start --workspace=@halo/web",
+    "lint": "npm run lint --workspace=@halo/web",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "clean": "rm -rf apps/*/node_modules packages/*/node_modules node_modules apps/web/.next"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
